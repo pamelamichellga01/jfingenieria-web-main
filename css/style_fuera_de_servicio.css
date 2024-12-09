@@ -1,0 +1,209 @@
+/* General */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido de Mantenimiento */
+.maintenance-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.maintenance-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003366;
+    font-weight: bold;
+    text-align: center;
+}
+
+.maintenance-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666666;
+    text-align: center;
+}
+
+.maintenance-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #003366, #808080);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Sección de Proyectos */
+.proyectos-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.proyectos-section h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Galería de Proyectos */
+.galeria-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+/* Tarjeta de Proyecto */
+.tarjeta-proyecto {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    background-color: #ffffff;
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-proyecto:hover img {
+    transform: scale(1.1);
+}
+
+/* Información de Hover en la Tarjeta */
+.info-hover {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(14, 90, 151, 0.9);
+    color: #ffffff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.tarjeta-proyecto:hover .info-hover {
+    transform: translateY(0);
+}
+
+.info-hover h3 {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.info-hover p {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* Media Queries */
+
+/* Para pantallas medianas, como tablets */
+@media screen and (max-width: 992px) {
+    .proyectos-section h1 {
+        font-size: 1.8em;
+    }
+
+    .galeria-proyectos {
+        gap: 15px;
+    }
+
+    .tarjeta-proyecto {
+        width: 45%; /* Dos tarjetas por fila en pantallas medianas */
+        height: 320px;
+    }
+}
+
+/* Para pantallas pequeñas, como teléfonos en orientación horizontal */
+@media screen and (max-width: 768px) {
+    .proyectos-section h1 {
+        font-size: 1.6em;
+    }
+
+    .galeria-proyectos {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tarjeta-proyecto {
+        width: 80%; /* Tarjeta más estrecha para dispositivos pequeños */
+        max-width: 350px;
+        height: auto;
+    }
+
+    .info-hover h3 {
+        font-size: 1.1em;
+    }
+
+    .info-hover p {
+        font-size: 0.8em;
+    }
+}
+
+/* Para pantallas muy pequeñas, como teléfonos en orientación vertical */
+@media screen and (max-width: 480px) {
+    .proyectos-section h1 {
+        font-size: 1.4em;
+        margin: 15px;
+    }
+
+    .galeria-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-proyecto {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .maintenance-content h1 {
+        font-size: 1.8em;
+    }
+
+    .maintenance-content p {
+        font-size: 1em;
+    }
+
+    .info-hover h3 {
+        font-size: 1em;
+    }
+
+    .info-hover p {
+        font-size: 0.75em;
+    }
+}

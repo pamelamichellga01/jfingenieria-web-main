@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e6e3e3;
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 30px;
+}
+
+.login-image {
+    width: 100%;
+    text-align: center;
+}
+
+.login-image img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0E5A97;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #ACB6E5;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .login-card {
+        width: 80%;
+        padding: 15px;
+    }
+    
+    .input-group input, .input-group button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .login-card {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .login-image img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .input-group input, .input-group button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .input-group label {
+        font-size: 12px;
+    }
+    
+    .error-message {
+        font-size: 10px;
+    }
+}

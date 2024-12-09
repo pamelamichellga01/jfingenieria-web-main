@@ -1,0 +1,347 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del body */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Sección principal */
+#sec_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5%;
+    background-color: #ffffff;
+}
+
+.info_personal {
+    flex: 1;
+    text-align: center;
+}
+
+.info_personal h4 {
+    margin-bottom: 40px;
+}
+
+.foto_perfil {
+    border-radius: 50%;
+    width: 250px;
+    height: 260px;
+    margin-bottom: 1em;
+    border: 4px solid #003366;
+}
+
+.perfil_profesional {
+    flex: 1;
+    text-align: left;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.perfil_profesional h2 {
+    font-size: 2em;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.perfil_profesional p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* Fondo de la sección combinada de Habilidades y Responsabilidades */
+.habilidades_responsabilidades {
+    padding: 4em 5%;
+    background-color: #999B9D;
+    text-align: center;
+}
+
+.habilidades_responsabilidades h2 {
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+/* Estilos de las tarjetas */
+.card_1, .card_2 {
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_1 {
+    background-color: #4992BF;
+}
+
+.card_2 {
+    background-color: #0E5A97;
+}
+
+.card_1:hover, .card_2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Íconos dentro de las tarjetas */
+.card_1 .icon, .card_2 .icon {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.card_1 h3, .card_2 h3 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card_1 p, .card_2 p {
+    font-size: 0.9em;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.icon i {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card_1 .icon img, .card_2 .icon img {
+    width: 50px;
+}
+
+/* Estilos para la sección de Perfil Personal */
+#info_personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 3em 5%;
+    background-color: #f9f9fb;
+    margin-top: 3em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.perfil_personal {
+    flex: 1;
+    text-align: left;
+    margin-right: 2em;
+}
+
+.perfil_personal h2 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 1em;
+}
+
+.perfil_personal p, .connect {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+/* Contenedor para el efecto de imagen */
+.foto-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.foto-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #0C5C94;
+    border-radius: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translate(-10px, 10px);
+    z-index: -1;
+}
+
+/* Imagen de perfil */
+.foto_perfil_derecha {
+    /*position: relative;*/
+    width: 250px; /* Tamaño de la imagen */
+    height: 300px;
+    overflow: hidden;
+    border-radius: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.foto_perfil_derecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.foto_perfil_derecha:hover img {
+    transform: scale(1.05);
+}
+
+.connect {
+    margin-top: 1.5em;
+  }
+  
+  .connect h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #003366;
+  }
+
+  .connect a {
+    text-decoration: none; /* Elimina cualquier subrayado en los enlaces */
+    display: inline-block; /* Asegura que los íconos se comporten como bloques en línea */
+    margin-right: 0px; /* Espacio entre íconos, si lo deseas */
+}
+  
+  .connect a img {
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+    vertical-align: middle; /* Alinea los íconos al centro verticalmente */
+  }
+  
+  .connect a:hover img {
+    transform: scale(1.2); /* Efecto zoom en los íconos sociales */
+  }
+
+/* Ajustes para tablets (pantallas medianas) */
+@media screen and (max-width: 768px) {
+    #sec_principal, .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .perfil_profesional, .right-column {
+        margin-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+/* Ajustes para móviles (pantallas pequeñas) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+  
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    ul.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .card-container, .cards-container {
+        gap: 1em;
+    }
+  
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Ajustes para tablets (pantallas medianas) */
+@media screen and (max-width: 768px) {
+    #info_personal {
+      flex-direction: column; /* Cambia la disposición a columna */
+      align-items: center; /* Centra los elementos */
+      padding: 2em 5%;
+    }
+  
+    .foto_perfil_derecha {
+      width: 250px;
+      height: 300px;
+    }
+  
+    .perfil_personal {
+      text-align: center; /* Centra el texto en tablets */
+      margin-left: 0; /* Elimina el margen izquierdo */
+    }
+  
+    .perfil_personal h2 {
+      font-size: 1.8em;
+    }
+  
+    .perfil_personal p {
+      font-size: 1em;
+    }
+  }
+  
+  /* Ajustes para móviles (pantallas pequeñas) */
+  @media screen and (max-width: 480px) {
+    #info_personal {
+      padding: 1.5em;
+    }
+  
+    .foto_perfil_derecha {
+      width: 200px;
+      height: 250px;
+    }
+  
+    .perfil_personal h2 {
+      font-size: 1.6em;
+    }
+  
+    .perfil_personal p {
+      font-size: 0.9em;
+    }
+  
+    .connect h3 {
+      font-size: 1.3em;
+    }
+  
+    .connect a img {
+      height: 25px; /* Ajusta el tamaño de los íconos sociales */
+      width: 30px;
+    }
+  }
+
