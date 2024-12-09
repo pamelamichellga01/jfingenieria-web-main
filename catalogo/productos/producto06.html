@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="icon" href="../../../img/Logo_JF.png">
+
+    <!-- Iconos flaticon para el footer -->
+    <!-- flaticon del footer -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap-flex.min.css">
+    <script src="https://use.fontawesome.com/5765211a64.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+  </head>
+  <body>
+    <!-- Header -->
+
+    <!-- Header con degradado y navegación -->
+    <!-- Header con degradado y navegación -->
+    <header>
+      <nav>
+          <div class="logo">
+              <a href="../../../../index.html"><img src="../../../../img/logo.png" alt="Logo de la empresa"></a>
+          </div>
+          <ul class="menu">
+              <li><a href="../../../../index.html">Inicio</a></li>
+              <li><a href="/catalogo.html">Productos</a></li>
+              <li><a href="fuera_de_servicio.html">Servicios</a></li>
+              <li><a href="contactanos.html">Contáctenos</a></li>
+          </ul>
+          <button id="theme-toggle" class="theme-toggle">
+              <img id="icon-diurno" src="../../../../img/eclipse_6015864.png" alt="Modo Diurno" style="display: none;">
+              <img id="icon-nocturno" src="../../../../img/eclipse.png" alt="Modo Nocturno">
+          </button>
+      </nav>
+  </header>
+  <!---->
+
+    <!-- /Header -->
+
+    <!-- Menu -->
+
+    <div id="menu-container">
+      <div class="mn-navbar">
+        <div class="contenido-barra">
+          <span class="tittle">Home </span>
+          <span class="tittle" style="color: black;"> Catálogo</span>
+        </div>
+        <div class="contenido-barra">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+            <span class="input-group-btn">
+              <button class="btn btn-platzi" type="button">
+                <span class="hidden-sm-down" style="color: aliceblue;">Buscar</span>
+                <i class="fa fa-search hidden-md-up"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Menu -->
+
+    <!-- Breadcrumbs -->
+
+    <div id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+            <nav class="breadcrumb">
+              <a class="breadcrumb-item" href="#">Catálogo</a>
+              <span class="breadcrumb-item active">Todos los productos</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /Breadcrumbs -->
+
+    <!-- Productos -->
+
+    <div id="productos-container">
+      <div class="container">
+        <div class="row">
+        <!-- Filtros -->
+
+        <div class="col-xs-12 col-md-3">
+          <div class="list-group filtros-toggle">
+            <a id="filtrosToggle" href="#" class="list-group-item list-group-item-action navbar-toggler hidden-sm-up" data-target="#filtros-container" data-toggle="collapse">
+              <h5 class="list-group-item-heading">Filtros <i class="fa fa-chevron-down"></i></h5>
+            </a>
+          </div>
+          <div id="filtros-container" class="collapse navbar-toggleable-xs">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">Categoría</h5>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
+              </a>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">DISPONIBLE</h5>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-success">Con stock</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-danger">sin stock</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-info">pocas unidades</a>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- /Filtros -->
+
+        <!-- Listado -->
+
+        <div class="col-xs-12 col-md-9">
+          <div class="row products" >
+
+
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/cepillos_de_limpieza.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">PRODUCTOS PARA REPROCESAMIENTO</p>
+                    <p class="card__description">Cepillos de Limpieza Reusables</p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.cepillo_de_limpieza.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Cepillos de Limpieza Reusables)." target="_blank">contactenos</a></button>
+                </div>  
+              </div>
+            </div>
+
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/botella_de_agua.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">PRODUCTOS PARA REPROCESAMIENTO</p>
+                    <p class="card__description">Botella de Agua para Sistemas de endoscopia</p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.botella_de_agua.showModal();">FT</button>
+                  <button class="declineButton"><a href='https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Botella de Agua para Sistemas de endoscopia).' target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>
+
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/valvulas.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">PRODUCTOS PARA REPROCESAMIENTO</p>
+                    <p class="card__description">Válvulas</p>
+                  </div>
+                </div>  
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.valvulas.showModal();">FT</button>
+                  <button class="declineButton"><a href='https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Válvulas).' target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>  
+
+
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/bomba_de_agua.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">BOMBA DE AGUA</p>
+                    <p class="card__description">Bomba de Agua UW600</p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.bomba_de_agua.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Flexi Knife con Irrigación)." target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>  
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/bomba_de_co2.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">BOMBA DE INSUFACIÓN DE CO2 </p>
+                    <p class="card__description">Bomba de CO2 CR4500</p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.bomba_de_co2.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Bomba de CO2 CR4500)." target="_blank">contactenos</a></button>
+                </div>  
+              </div>
+            </div>
+
+
+
+
+
+
+<!-- atencion y servicios hospitalarios -->
+
+
+
+
+
+
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/flujometro.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">Flujómetros</p>
+                    <p class="card__description"></p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.flujometro.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Flujómetros)." target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/kid_de_peg.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">KIT DE PEG</p>
+                    <p class="card__description">Kit de Gastrostomía Endoscópica Percutánea </p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.kid_de_peg.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (KIT DE PEG)." target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/tubo_para_peg.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">TUBO DE REEMPLAZO PARA PEG</p>
+                    <p class="card__description">Tubo de Reemplazo Gastrostomía Endoscópica Percutánea </p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.tubo_peg.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (TUBO DE REEMPLAZO PARA PEG)." target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>
+
+            <div class="conteiner-card">
+              <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
+                <div class="card">
+                  <img src="../images/irrigadores.png" alt="">
+                  <div class="card__content">
+                    <p class="card__title">PRODUCTOS PARA REPROCESAMIENTO</p>
+                    <p class="card__description">Irrigadores de canal</p>
+                  </div>
+                </div>
+                <div class="buttonContainer">
+                  <button class="acceptButton" onclick="window.irrigadores.showModal();">FT</button>
+                  <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (Irrigadores de canal )." target="_blank">contactenos</a></button>
+                </div> 
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-xs-center pagination-container">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="producto05.html" tabindex="-1" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">anterior</span>
+                    </a>
+                  </li> 
+                  <li class="page-item">
+                    <a class="page-link" href="../catalogo.html">1 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="producto04.html">5</a></li>
+                  <li class="page-item"><a class="page-link" href="producto05.html">6</a></li>
+                  <li class="page-item active"><a class="page-link" href="producto06.html">7</a></li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">siguiente</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- /Listado -->
+        </div>
+      </div>
+    </div>
+
+    <!-- /Productos -->
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2024 JF Ingeniería. <a href="terminos_legales.html">Todos los derechos reservados.</a></p>
+          <div class="social-links">
+              <a href="https://www.facebook.com/Jf.IngenieriaCOL" target="_blank"><i class="fi fi-brands-facebook"></i></a>
+              <a href="https://www.instagram.com/jf.ingenieriacol/?hl=es" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+              <a href="https://wa.link/a7mptf" target="_blank"><i class="fi fi-brands-whatsapp"></i></a>
+          </div>
+          <p>Contacto: +57 316 6219432 | info@jfingenieria.com</p>
+      </div>
+    </footer>
+
+    <!-- /Footer -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="modalOferta" tabindex="-1" role="dialog" aria-labelledby="modalOfertaLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="modalOfertaLabel">Oferta exclusiva</h4>
+          </div>
+          <div class="modal-body">
+            Regístrate hoy y recibe $15 de descuento!
+            <form action="#" class="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="tu@correo.com" name="email">
+                <small id="emailHelp" class="form-text text-muted">No compartiremos tu información con nadie más</small>
+              </div>
+              <button type="submit" class="btn btn-platzi form-text">Registrarme</button>
+              <button id="btnNoRegistrar" type="button" class="btn btn-warning form-text" data-dismiss="modal">No, no quiero el descuento</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ficha tecnica -->
+
+    <!-- #1 -->
+    <dialog id="cepillo_de_limpieza">
+      <h3>Cepillos de Limpieza Reusables</h3>
+      <br>
+      <div class="imagen">
+        <img src="../images/cepillos_de_limpieza.png" alt="">
+      </div>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Información Técnica:</strong> <br>
+        Longitud 2300 mm <br>
+        Diámetro de las cerdas 6 mm <br>
+        Compables con canal de trabajo de 2,8 mm
+      </p>
+      <br>
+      <div class="imagen_ft">
+        <img src="../fichas/cepillo_de_limpieza_2.png" alt="">
+      </div>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Observación</strong> <br>
+        Compable con endoscopios <br>
+        Olympus - SonoScape
+      </p>
+      <button class="btn-modal" onclick="window.cepillo_de_limpieza.close();">Cerrar</button>
+    </dialog>
+    <!-- #1 end -->
+
+    <!-- #2 -->
+    <dialog id="botella_de_agua">
+      <h3>Botella de Agua para Sistemas de endoscopia</h3>
+      <br>
+      <div class="imagen">
+        <img src="../images/botella_de_agua.png" alt="">
+      </div>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Observación</strong> <br>
+        Compable con endoscopios <br>
+        Olympus - SonoScape
+      </p>
+      <button class="btn-modal" onclick="window.botella_de_agua.close();">Cerrar</button>
+    </dialog>
+    <!-- #2 end -->
+
+    <!-- #3 -->
+    <dialog id="valvulas">
+      <h3>Válvulas</h3>
+      <br>
+      <div class="imagen">
+        <img src="../images/valvulas.png" alt="">
+      </div>
+      <br>
+      <div class="imagen">
+        <img src="../fichas/valvulas_2.png" alt="">
+      </div>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Observación</strong> <br>
+        Compable con endoscopios <br>
+        Olympus - SonoScape
+      </p>
+      <button class="btn-modal" onclick="window.valvulas.close();">Cerrar</button>
+    </dialog>
+    <!-- #3 end -->
+
+    <!-- #4 -->
+    <dialog id="bomba_de_agua">
+      <h3>Bomba de Agua UW600</h3>
+      <br>
+      <div class="imagen_ft">
+        <img src="../images/bomba_de_agua.png" alt="">
+      </div>
+      <br>
+      <p><strong style="color: rgb(25, 25, 117);">Incluye</strong> <br>
+        Bomba de Agua <br>
+        Contenedor de Agua <br>
+        Cable de poder <br>
+        Pedal <br>
+        Tubos de salida de agua</p>
+      <br>
+      <p><strong style="color: rgb(25, 25, 117);">Caracteríscas del Producto:</strong> <br>
+        1. Flujo armonioso, permite el suministro constante de agua a través del ajuste de diez
+        niveles, cuenta con memoria automáca. <br>
+        2. La operación fácil, a través del uso del pedal que controla el flujo de los líquidos. <br>
+        3. El control inteligente, el flujo de agua se suspende después de 20s de uso connuo. </p>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Observación</strong> <br>
+        Compatible con cualquier marca de endoscopios</p>
+      <br>
+      <button class="btn-modal" onclick="window.bomba_de_agua.close();">Cerrar</button>
+    </dialog>
+    <!-- #4 end -->
+
+    <!-- #5 -->
+    <dialog id="bomba_de_co2">
+      <h3>Bomba de CO2 CR4500</h3>
+      <br>
+      <div class="imagen">
+        <img src="../images/bomba_de_co2.png" alt="">
+      </div>
+      <br>
+      <p><strong style="color: rgb(25, 25, 117);">Incluye</strong> <br>
+        Cable de Poder
+        Interruptor de Pedal
+        Tubo de salida de gas
+        Manguera de alta presión
+        (Opcional)</p>
+      <br>
+      <p><strong style="color: rgb(25, 25, 117);">Caracteríscas del Producto:</strong> <br>
+        1. La unidad de regulación de CO2 se uliza para la alimentación de gas y agua de CO2, y
+        la alimentación de gas solo se uliza para el tracto digesvo superior e inferior; <br>
+        2. Ampliar el rango de aplicación de la operación del instrumento de endoscopia
+        digesva original y sasfacer mejor la necesidad de seguridad clínica de operación de
+        tipo energizante y bisturí esfinterotómico; <br>
+        3. Nueva pantalla OLED de amplio ángulo de visión, alto brillo; <br>
+        4. El regulador de dos etapas y el filtro de impurezas pueden garanzar un
+        funcionamiento seguro y confiable de la unidad de regulación;
+        5. El diseño único del precalentamiento del termostato de salida de gas puede aliviar la
+        incomodidad del paciente durante la operación; <br>
+        6. Cuatro pos de modo de selección de empo y un conveniente interruptor de pedal
+        impermeable médico aseguran el volumen de gas en funcionamiento bajo control; <br>
+        7. El control de presión de la fuente de gas inteligente con el diseño de seguridad para
+        un flujo de salida demasiado bajo y demasiado alto puede evitar los problemas causados
+        por una manipulación incorrecta u olvidada; <br>
+        8. Compabilidad perfecta con el host de endoscopia de muchas marcas como Olympus,
+        Pentax y Fujifilm.</p>
+      <br>
+      <button class="btn-modal" onclick="window.bomba_de_co2.close();">Cerrar</button>
+    </dialog>
+    <!-- #5 end -->
+
+    <!-- #6 -->
+    <dialog id="flujometro">
+      <h3>Flujómetros</h3>  
+      <br>
+      <div class="imagen">
+        <img src="../images/flujometro.png" alt="">
+      </div>
+      <br>
+        <p></p>
+      <button class="btn-modal" onclick="window.flujometro.close();">Cerrar</button>
+    </dialog>
+    <!-- #6 end -->
+
+    <!-- #7 -->
+    <dialog id="kid_de_peg">
+      <h3>KIT PEG</h3>
+      <br>
+      
+        <div class="imagen">
+          <img src="../images/kid_de_peg.png" alt="">
+        </div>
+        <br>
+        <p><strong style="color: rgb(25, 25, 117);">El KIT PEG CONTIENE:</strong> <br>
+          1 Tubo de Alimentación en Silicona <br>
+          1 Guía de inserción. <br>
+          1 Porta cables <br>
+          1 Adaptador universal <br>
+          1 Adaptador Bola <br>
+          1 Tapón de silicona para el cierre <br>
+          1 Aguja introductora - Aguja Grande <br>
+          1 Bisturí No 11 <br>
+          1 Jeringa con aguja de 5 mm <br>
+          1 Aguja Calibre 25 - Aguja pequeña <br>
+          1 Tijera <br>
+          1. Asa de recuperación <br>
+          1 Manual de Instrucciones</p>
+        <br>
+        <div class="imagen">
+          <img src="../fichas/kid_de_peg_2.png" alt="">
+        </div>
+      <br>
+        <p><strong  style="color: rgb(25, 25, 117);">Información Técnica:</strong> <br>
+          Tamaños de 20 - 24 Fr. Técnica de Tracción. <br>
+          Otros tamaños pueden ser producidos bajo pedido
+        </p>
+        <br>
+        <div class="imagen_ft">
+          <img src="../fichas/kid_de_peg_ft.png" alt="">
+        </div>
+      <button class="btn-modal" onclick="window.kid_de_peg.close();">Cerrar</button>
+    </dialog>
+    <!-- #7 end -->
+
+    <!-- #8 -->
+    <dialog id="tubo_peg">
+      <h3>TUBO DE REEMPLAZO PARA PEG</h3>
+      <br>
+      <div class="imagen">
+      <img src="../images/tubo_para_peg.png" alt="">
+      </div>
+      <br>
+      <p><strong style="color: rgb(25, 25, 117);">El Tubo de Reemplazo de PEG CONTIENE:</strong> <br>
+        1 Tubo de Reemplazo de Gastrostomía <br>
+        1 Jeringa de 12 ml
+      </p>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Información Técnica:</strong> <br>
+        Tamaños de 20 - 22 - 24 Fr. 
+      </p>
+      <br>
+      <div class="imagen_ft">
+        <img src="../fichas/tubo_para_peg_ft.png" alt="">
+      </div>
+      <br>
+      <button class="btn-modal" onclick="window.tubo_peg.close();">Cerrar</button>
+    </dialog>
+    <!-- #8 end -->
+
+    <!-- #9 -->
+    <dialog id="irrigadores">
+      <h3>Irrigadores de canal</h3>
+      <br>
+      <div class="imagen">
+        <img src="../images/irrigadores.png" alt="">
+      </div>
+      <br>
+      <p><strong  style="color: rgb(25, 25, 117);">Observación</strong> <br>
+        Compable con endoscopios <br>
+        Olympus - SonoScape
+      </p>
+      <button class="btn-modal" onclick="window.irrigadores.close();">Cerrar</button>
+    </dialog>
+    <!-- #9 end -->
+
+    <!-- ficha tecnica end -->
+    <!-- /Modal -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+
+  </body>
+</html>

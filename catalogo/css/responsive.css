@@ -1,0 +1,357 @@
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.5px) { 
+    .conteiner-card {
+        width: 214px;
+        height: 211px;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 203px;
+        height: 162px;
+    }
+    .card img{
+        width: 203px;
+        height: 162px;
+    }
+    .buttonContainer {
+        margin-left: 28px;
+        gap: 8px;
+    }
+    .acceptButton{
+        width: 70px;
+        height: 26px;
+        font-weight: 500;
+    }
+    .declineButton{
+        width: 200px;
+        height: 26px;
+        font-weight: 600;
+    }
+    .card__title{
+        font-size: 13.2px;
+        font-weight: 600;
+    }
+    .card__description{
+        font-size: 12.7px;
+    }
+    .list-group-item{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    /* FT */
+    dialog{
+        max-width: 446px;
+        padding: 33px 50px;
+    }
+    h3 {
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    /* FT end */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.5px) { 
+    .conteiner-card {
+        width: 238px;
+        height: 234px;
+        padding: 7px;
+        margin-left: 2%;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 225px;
+        height: 180px;
+    }
+    .card img{
+        width: 225px;
+        height: 180px;
+    }
+    .buttonContainer {
+        margin-left: 35px;
+        gap: 8px;
+    }
+    .acceptButton{
+        width: 70px;
+        height: 28px;
+        font-weight: 500;
+    }
+    .declineButton{
+        width: 200px;
+        height: 28px;
+        font-weight: 600;
+    }
+    .card__title{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .card__description{
+        font-size: 14px;
+    }
+    .list-group-item{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* FT */
+    dialog{
+        max-width: 495px;
+        padding: 36px 60px;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    /* FT end */
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 767.5px) {
+    .conteiner-card {
+        width: 238px;
+        height: 234px;
+        padding: 7px;
+        margin-left: 2%;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 225px;
+        height: 180px;
+    }
+    .card img{
+        width: 225px;
+        height: 180px;
+    }
+    .buttonContainer {
+        margin-left: 35px;
+        gap: 8px;
+    }
+    .acceptButton{
+        width: 70px;
+        height: 28px;
+        font-weight: 500;
+    }
+    .declineButton{
+        width: 200px;
+        height: 28px;
+        font-weight: 600;
+    }
+    .card__title{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .card__description{
+        font-size: 14px;
+    }
+    .list-group-item{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* FT */
+    dialog{
+        max-width: 495px;
+        padding: 36px 60px;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    /* FT end */
+}
+
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+    .conteiner-card {
+        width: 225px;
+        height: 221px;
+        padding: 6px;
+        margin-left: 3%;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 213px;
+        height: 170px;
+    }
+    .card img{
+        width: 213px;
+        height: 170px;
+    }
+    .buttonContainer {
+        margin-left: 32px;
+        gap: 8px;
+    }
+    .acceptButton{
+        width: 65px;
+        height: 26px;
+        font-weight: 340;
+    }
+    .declineButton{
+        width: 140px;
+        height: 26px;
+        font-weight: 510;
+    }
+    .card__title{
+        font-size: 13px;
+        font-weight: 595;
+    }
+    .card__description{
+        font-size: 12px;
+    }
+    .list-group-item{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* FT */
+    dialog{
+        max-width: 467px;
+        padding: 30px 50px;
+    }
+    h3 {
+        font-size: 2.3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    /* FT end */
+}
+
+@media (max-width: 543.5px) {
+
+    .conteiner-card {
+        width: 214px;
+        height: 211px;
+        padding: 6px;
+        margin-left: 3%;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 203px;
+        height: 162px;
+    }
+    .card img{
+        width: 203px;
+        height: 162px;
+    }
+    .buttonContainer {
+        margin-left: 10px;
+        gap: 10px;
+    }
+    .acceptButton{
+        width: 50px;
+        height: 24px;
+        font-weight: 320;
+    }
+    .declineButton{
+        width: 120px;
+        height: 24px;
+        font-weight: 480;
+    }
+    .card__title{
+        font-size: 12px;
+        font-weight: 560;
+    }
+    .card__description{
+        font-size: 11px;
+    }
+    .list-group-item{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* FT */
+    dialog{
+        max-width: 446px;
+        padding: 28px 45px;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    /* FT end */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+ @media (max-width: 492px) {
+
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteiner-card {
+        width: 264px;
+        height: 260px;
+        padding: 6px;
+      }
+    .col-xs-12{
+        width: 100%;
+    }
+    .card{
+        width: 250px;
+        height: 200px;
+    }
+    .card img{
+        width: 250px;
+        height: 200px;
+    }
+    .buttonContainer {
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .acceptButton{
+        width: 55px;
+        height: 30px;
+        font-weight: 400;
+    }
+    .declineButton{
+        width: 145px;
+        height: 30px;
+        font-weight: 600;
+    }
+    .card__title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .card__description{
+        font-size: 14px;
+    }
+    .list-group-item{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+     /* FT */
+     dialog{
+        max-width: 380px;
+        padding: 24px 36px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    /* FT end */
+}

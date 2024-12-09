@@ -1,0 +1,97 @@
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: #321c3b;  
+    text-align: center;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;  
+    color: #fff;
+  }
+
+  dialog p{
+    text-align: justify;
+  }
+  
+  
+  
+  .btn-modal {
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    background-color: #4984b1;
+    color: #141313;
+    padding: 20px 35px;
+    margin: 30px 0 20px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;  
+    font-weight: 700;  
+    transition: box-shadow 0.25s ease-in-out;
+    box-shadow: 0px 0px 0 #fff;
+  }
+  
+  .btn-modal:hover {
+    box-shadow: 8px 8px 0 #fff;
+    background-color: #85accc;
+  }
+  
+  dialog {
+    max-width: 700px;
+    padding: 40px 70px;
+    border: 8px solid #3b7bac;
+    background-color: #fafafafc;
+  }
+  
+  dialog::backdrop {
+    background: rgba(227, 227, 227, 0.9);
+  }
+  
+  dialog p {
+    color: #321c3b;
+  }
+  dialog .p-adv{
+    color: red;
+  }
+
+  
+  dialog button {
+    box-shadow: 0px 0px 0 #321c3b;
+  }
+  
+  dialog button:hover {
+    box-shadow: 8px 8px 0 #321c3b;
+  }
+  
+
+dialog img{
+  width: 100%;
+}
+dialog img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 3px 3px 3px rgb(153, 142, 142);
+}
+dialog .imagen{
+  box-shadow: 3px 3px 3px rgb(206, 198, 198);
+  overflow: hidden;
+}
+dialog .imagen:hover{
+  box-shadow: 3px 3px 3px rgb(153, 142, 142);
+}
+dialog .imagen_ft img{ 
+  box-shadow: 3px 3px 3px rgb(206, 198, 198);
+}
+dialog .imagen_ft img:hover{
+  box-shadow: 3px 3px 3px rgb(153, 142, 142);
+}
+.endoscopio{
+  transform: scale(1.05);
+}
