@@ -95,3 +95,6 @@ dialog .imagen_ft img:hover{
 .endoscopio{
   transform: scale(1.05);
 }
+.puntos li{
+  font-size: 24px;
+}
