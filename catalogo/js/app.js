@@ -47,7 +47,7 @@ $filtrosToggle.click((ev) => {
 
 
 const categorias = [
-    {
+    { 
       categoria: "equipos_biomedicos",
       tipos: ["VALVULAS", "PAPILOTOMO", "FLEXI_KNIFE", "Faldas de oficina"]
     },
