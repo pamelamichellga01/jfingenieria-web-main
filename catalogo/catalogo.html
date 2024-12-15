@@ -117,7 +117,7 @@
                 <div class="list-group-item list-group-item-action mn-group">
                   <span class="tag tag-pill tag-default pull-xs-right">6</span>                
                   <div class="btn-group" style="height: 60px;">
-                    <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                    <button class="btn btn-secondary btn-sm filter_none" onclick="toggle('all_card'); filter_category('equipos_biomedicos');" id="equipos_biomedicos" type="button" style="width: 90%;">
                       EQUIPOS BIOMEDICOS
                     </button>
                     <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -139,7 +139,7 @@
                   <span class="tag tag-pill tag-default pull-xs-right">10</span>
 
                   <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm" onclick="toggle('all_card');" type="button" style="width: 90%;">
+                    <button class="btn btn-secondary btn-sm filter_none" onclick="toggle('all_card'); filter_category('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
                       ENDOSCOPIA DIGESTIVA
                     </button>
                     <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -642,11 +642,33 @@
               </a>
             </div>  
 
+
+              <div class="list-group-item list-group-item-action mn-group">
+                <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+                <div class="btn-group" style="height: 60px;">
+                  <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                    EQUIPOS BIOMEDICOS
+                  </button>
+                  <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                    <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                    <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                    <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                    <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+
               <div class="list-group-item list-group-item-action mn-group">
                 <span class="tag tag-pill tag-default pull-xs-right">10</span>
 
                 <div class="btn-group">
-                  <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                  <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
                     ENDOSCOPIA DIGESTIVA
                   </button>
                   <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -717,13 +739,17 @@
                 <span class="tag tag-pill tag-default pull-xs-right">6</span>                
                 <div class="btn-group" style="height: 60px;">
                   <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
-                    Video Endoscopios <br> Flexibles
+                    ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
                   </button>
                   <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">...</a></li>
+                    <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                    <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                    <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                    <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                    <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
                   </ul>
                 </div>
               </div>
@@ -1171,16 +1197,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -1648,16 +1793,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -2117,16 +2381,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -2255,7 +2638,7 @@
               </div>
             </div>
             <div class="buttonContainer">
-              <button class="acceptButton" onclick="window.canastilla_atrapa_polipos.showModal();">FT</button>
+              <button class="acceptButton" onclick="window.ligador_multibandas.showModal();">FT</button>
               <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (LIGADOR MULTI-BANDAS)." target="_blank">contactenos</a></button>
             </div> 
           </div>
@@ -2600,16 +2983,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -3049,16 +3551,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -3579,16 +4200,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -3610,7 +4350,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/kits_de_oxigeno.png" alt="">
@@ -3627,7 +4367,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/succionadores.png" alt="">
@@ -3644,7 +4384,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/columna.png" alt="">
@@ -3662,7 +4402,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/sistema_de_vacio.png" alt="">
@@ -3678,7 +4418,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/compresores_de_vacio.png" alt="">
@@ -3695,7 +4435,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/accesores_y_respuestos.png" alt="">
@@ -3711,7 +4451,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/manguera.png" alt="">
@@ -3727,7 +4467,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/tomas_de_pared.png" alt="">
@@ -3743,7 +4483,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/tomas_de_pared_y_consola.png" alt="">
@@ -4090,16 +4830,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -4121,7 +4980,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/cajas_de_corte.png" alt="">
@@ -4138,7 +4997,7 @@
             </div>
 
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/alarmas_de_area.png" alt="">
@@ -4155,7 +5014,7 @@
             </div>
 
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="fichas/unidades_de_regulacion_3.png" alt="">
@@ -4173,7 +5032,7 @@
 
 
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/reguladores_de_presion.png" alt="">
@@ -4189,7 +5048,7 @@
               </div>
             </div>  
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="fichas/valvulas_de_bola_2.png" alt="">
@@ -4206,7 +5065,7 @@
             </div>
 
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/valvulas_para_alta_presion.png" alt="">
@@ -4222,7 +5081,7 @@
               </div>
             </div>
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/manifold.png" alt="">
@@ -4238,7 +5097,7 @@
               </div>
             </div>
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/reguladores_tipo_victor.png" alt="">
@@ -4254,7 +5113,7 @@
               </div>
             </div>
 
-            <div class="conteiner-card tarjeta">
+            <div class="conteiner-card">
               <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
                 <div class="card">
                   <img src="images/reguladores_tipo_harris.png" alt="">
@@ -4583,16 +5442,135 @@
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">Categoría</h5>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            PROCEDIMIENTOS BILIARES Y PANCREÁTICOS <span class="tag tag-pill tag-default pull-xs-right">10</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            EXTRACCIÓN DE CUERPOS EXTRAÑOS<span class="tag tag-pill tag-default pull-xs-right">15</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            TOMA DE BIOPSIA <span class="tag tag-pill tag-default pull-xs-right">6</span>
-          </a>
-        </div>
+        </div>  
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                EQUIPOS BIOMEDICOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">10</span>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm endoscopia_digestiva" onclick="toggle('all_card'); endoscopia_digestiva('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
+                ENDOSCOPIA DIGESTIVA
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procedimientos Biliares y Pancreácos</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cuerpos Extraños</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Biopsia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Polipectomía</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Hemostasia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Disección Endoscópica de la Submucosa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Retiro de Balón Intragástrico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Gastrostomía Endoscópica Percutánea </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Limpieza y Desinfección</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipos Complementarios</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">15</span>
+            
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Dispositivos de Imágenes <br> Diagnósticas
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mamógrafos digitales</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de biopsia prono Giotto Image 3DL</a></li>
+                <li><a class="dropdown-item" href="#">Monitor de paciente para RM</a></li>
+                <li><a class="dropdown-item" href="#">Bomba de infusión para RM</a></li>
+                <li><a class="dropdown-item" href="#">Detector de Metales Ferrosos FMD</a></li>
+                <li><a class="dropdown-item" href="#">Sistema de inyección para TC MEDRAD® Salient Dual</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para RM Spectris Solaris® EP</a></li>
+                <li><a class="dropdown-item" href="#">Sistema inyección para Angiografía Mark 7 Arterion</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos portátiles</a></li>
+                <li><a class="dropdown-item" href="#">Ecógrafos estacionarios</a></li>
+                <li><a class="dropdown-item" href="#">Arcos en C</a></li>
+                <li><a class="dropdown-item" href="#">Monitor médico</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía computarizada</a></li>
+                <li><a class="dropdown-item" href="#">Detectores digitales - Mamografía</a></li>
+                <li><a class="dropdown-item" href="#">Radiografía móvil</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía Digital</a></li>
+                <li><a class="dropdown-item" href="#">Salas de Radiografía y Fluoroscopia</a></li>
+                <li><a class="dropdown-item" href="#">Complementarios</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="list-group-item list-group-item-action mn-group">
+            <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+            <div class="btn-group" style="height: 60px;">
+              <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
+                Video Endoscopios <br> Flexibles
+              </button>
+              <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">...</a></li>
+              </ul>
+            </div>
+          </div>
+
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action active">
             <h5 class="list-group-item-heading">DISPONIBLE</h5>
@@ -4614,7 +5592,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/regulador_de_alta.png" alt="">
@@ -4631,7 +5609,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/regulador_de_linea.png" alt="">
@@ -4648,7 +5626,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_de_doble_etapa.png" alt="">
@@ -4666,7 +5644,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/valvulas_para_cilindro_en_acero.png" alt="">
@@ -4682,7 +5660,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/valvulas_para_cilindro_en_aluminio.png" alt="">
@@ -4699,7 +5677,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/valvulas_de_bola_4_tornillos.png" alt="">
@@ -4715,7 +5693,7 @@
           </div>
         </div>
 
-        <!-- <div class="conteiner-card tarjeta">
+        <!-- <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/manifold.png" alt="">
@@ -4731,7 +5709,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_tipo_victor.png" alt="">
@@ -4747,7 +5725,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_tipo_harris.png" alt="">
@@ -5082,11 +6060,33 @@
             </a>
           </div>  
 
+
+            <div class="list-group-item list-group-item-action mn-group">
+              <span class="tag tag-pill tag-default pull-xs-right">6</span>                
+              <div class="btn-group" style="height: 60px;">
+                <button class="btn btn-secondary btn-sm filter_none" onclick="toggle('all_card'); filter_category('equipos_biomedicos');" id="equipos_biomedicos" type="button" style="width: 90%;">
+                  EQUIPOS BIOMEDICOS
+                </button>
+                <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">EQUIPOS ANTROPOMETRICOS</a></li>
+                  <li><a class="dropdown-item" href="#">MONITORES DE SIGNOS VITALES</a></li>
+                  <li><a class="dropdown-item" href="#">DESFIBRILADORES Y ELECTROCARDIOGRAFOS</a></li>
+                  <li><a class="dropdown-item" href="#">SALAS DE CIRUGIA</a></li>
+                  <li><a class="dropdown-item" href="#">VENTILACIÓN MECANICA</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
             <div class="list-group-item list-group-item-action mn-group">
               <span class="tag tag-pill tag-default pull-xs-right">10</span>
 
               <div class="btn-group">
-                <button class="btn btn-secondary btn-sm" onclick="toggle_mennu('all_card');" type="button" style="width: 90%;">
+                <button class="btn btn-secondary btn-sm filter_none" onclick="toggle('all_card'); filter_category('endoscopia_digestiva');" id="endoscopia_digestiva" type="button" style="width: 90%;">
                   ENDOSCOPIA DIGESTIVA
                 </button>
                 <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -5157,13 +6157,17 @@
               <span class="tag tag-pill tag-default pull-xs-right">6</span>                
               <div class="btn-group" style="height: 60px;">
                 <button class="btn btn-secondary btn-sm" type="button" style="width: 90%;">
-                  Video Endoscopios <br> Flexibles
+                  ATENCIÓN Y SERVICIOS <br> HOSPITALARIOS
                 </button>
                 <button type="button"  style="width: 10%;" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">...</a></li>
+                  <li><a class="dropdown-item" href="#">Atención Hospitalaria</a></li>
+                  <li><a class="dropdown-item" href="#">Atención Respiratoria</a></li>
+                  <li><a class="dropdown-item" href="#">Proyectos Hospitalarios</a></li>
+                  <li><a class="dropdown-item" href="#">Reguladores de presión para gases</a></li>
+                  <li><a class="dropdown-item" href="#">Válvulas para alta presión</a></li>
                 </ul>
               </div>
             </div>
@@ -5797,7 +6801,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="PAPILOTOMO">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/papilotomo.png" alt="">
@@ -5813,7 +6817,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="ALAMBRE_GUIA">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/alambre.png" alt="">
@@ -5829,7 +6833,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta"  id="CATETER_CON_BALON">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/balon_de_extraccion.png" alt="">
@@ -5845,7 +6849,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="CANASTILLAS">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/canastilla.png" alt="">
@@ -5861,7 +6865,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="PINZA_DE_EXTRACCION">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/pinza.png" alt="">
@@ -5877,7 +6881,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="PINZA_DE_BIOSIDA">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/pinza_ovalada.png" alt="">
@@ -5895,7 +6899,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="PINZA_DE_BIOSIDA_CALIENTE">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/pinzas_de_biosidas.png" alt="">
@@ -5911,7 +6915,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta"  id="INYECTORES">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/inyectores.png" alt="">
@@ -5927,7 +6931,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="HEMOCLIPS">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/hemoclips.png" style="transform: scale(0.95);" alt="">
@@ -5943,7 +6947,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="LIGADOR_MULTI_BANDAS">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/ligador_multibandas.png" alt="">
@@ -5953,13 +6957,13 @@
               </div>
             </div>
             <div class="buttonContainer">
-              <button class="acceptButton" onclick="window.canastilla_atrapa_polipos.showModal();">FT</button>
+              <button class="acceptButton" onclick="window.ligador_multibandas.showModal();">FT</button>
               <button class="declineButton"><a href="https://api.whatsapp.com/send?phone=316 6219432&text=Hola, estoy interesado en este producto (LIGADOR MULTI-BANDAS)." target="_blank">contactenos</a></button>
             </div> 
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="ASA_POLITEMICA_CALIENTE">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/asa_de_polipectomia.png" alt="">
@@ -5975,7 +6979,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="CANASTILLA_ATRAPA_POLIPOS">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/canastilla_atrapa_polipos.png" alt="">
@@ -5991,7 +6995,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="BALL_TIP_KNIFE">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/diseccion.png" alt="">
@@ -6007,7 +7011,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="FLEXI_KNIFE">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/flexi.png" alt="">
@@ -6023,7 +7027,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="HOOK_KNIFE">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/diseccion_hook.png" alt="">
@@ -6041,7 +7045,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="FLEXI_KNIFE_CON_IRRIGACION">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/flexi_knife.png" alt="">
@@ -6057,7 +7061,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="RETIRO_DE_BALON_INTRAGÁSTRICO">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/retiro_de_balon.png" alt="">
@@ -6073,7 +7077,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="RETIRO_DE_BALON_INTRAGASTRICO">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/deflacion.png" alt="">
@@ -6089,7 +7093,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="KIT_DE_PEG">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/kid_de_peg.png" alt="">
@@ -6105,7 +7109,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="TUBO_DE_REEMPLAZO_PARA_PEG">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/tubo_para_peg.png" alt="">
@@ -6121,7 +7125,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="IRRIGADORES_DE_CANAL">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/irrigadores.png" alt="">
@@ -6137,7 +7141,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="CEPILLOS_DE_LIMPIEZA_REUSABLES">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/cepillos_de_limpieza.png" alt="">
@@ -6154,7 +7158,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="BOTELLA_DE_AGUA_PARA_SISTEMAS_DE_ENDONCOSPIO">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/botella_de_agua.png" alt="">
@@ -6171,7 +7175,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="VALVULAS">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/valvulas.png" alt="">
@@ -6189,7 +7193,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="BOMBA_DE_AGUA">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/bomba_de_agua.png" alt="">
@@ -6205,7 +7209,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="BOMBA_DE_INSUFACION_DE_CO2">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/bomba_de_co2.png" alt="">
@@ -6222,7 +7226,7 @@
         </div>
 
         <!-- atencion y servicios hospitalarios -->
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/flujometro.png" alt="">
@@ -6238,7 +7242,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_de_vacio.png" alt="">
@@ -6254,7 +7258,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_para_gases.png" alt="">
@@ -6270,7 +7274,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/cilindros.png" alt="">
@@ -6286,7 +7290,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/kits_de_oxigeno.png" alt="">
@@ -6303,7 +7307,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/succionadores.png" alt="">
@@ -6320,7 +7324,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/columna.png" alt="">
@@ -6338,7 +7342,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/sistema_de_vacio.png" alt="">
@@ -6354,7 +7358,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/compresores_de_vacio.png" alt="">
@@ -6371,7 +7375,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/accesores_y_respuestos.png" alt="">
@@ -6387,7 +7391,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/manguera.png" alt="">
@@ -6403,7 +7407,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/tomas_de_pared.png" alt="">
@@ -6419,7 +7423,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/tomas_de_pared_y_consola.png" alt="">
@@ -6435,7 +7439,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/cajas_de_corte.png" alt="">
@@ -6452,7 +7456,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/alarmas_de_area.png" alt="">
@@ -6469,7 +7473,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="fichas/unidades_de_regulacion_3.png" alt="">
@@ -6487,7 +7491,7 @@
 
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_de_presion.png" alt="">
@@ -6503,7 +7507,7 @@
           </div>
         </div>  
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="fichas/valvulas_de_bola_2.png" alt="">
@@ -6520,7 +7524,7 @@
         </div>
 
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/valvulas_para_alta_presion.png" alt="">
@@ -6536,7 +7540,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/manifold.png" alt="">
@@ -6552,7 +7556,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_tipo_victor.png" alt="">
@@ -6568,7 +7572,7 @@
           </div>
         </div>
 
-        <div class="conteiner-card tarjeta">
+        <div class="conteiner-card tarjeta" id="">
           <div class="col-xs-12 col-sm-6 col-lg-4" style="padding: 0%;">
             <div class="card">
               <img src="images/reguladores_tipo_harris.png" alt="">

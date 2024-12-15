@@ -48,13 +48,18 @@ $filtrosToggle.click((ev) => {
 
 const categorias = [
     {
-      categoria: "endoscopia_digestiva",
-      tipos: ["procedimientos_biliares_y_pancreacos", "cuerpos_extraños", "biopsia", "polipectomia", "hemostasia", "diseccion_endoscópica_de_la_submucosa", "retiro_de Balón Intragástrico", "gastrostomia_endoscopica_Percutanea", "limpieza_y_desinfeccion", "equipos_complementarios"]
+      categoria: "equipos_biomedicos",
+      tipos: ["VALVULAS", "PAPILOTOMO", "FLEXI_KNIFE", "Faldas de oficina"]
     },
     {
-      categoria: "Ropa Formal",
-      tipos: ["Trajes", "Vestidos de gala", "Camisas de vestir", "Faldas de oficina"]
+      categoria: "endoscopia_digestiva",
+      tipos: ["PAPILOTOMO", "ALAMBRE_GUIA", "CATETER_CON_BALON", "CANASTILLAS", "PINZA_DE_EXTRACCION", "PINZA_DE_BIOSIDA", 
+        "PINZA_DE_BIOSIDA_CALIENTE", "INYECTORES", "HEMOCLIPS", "LIGADOR_MULTI_BANDAS", "ASA_POLITEMICA_CALIENTE", "CANASTILLA_ATRAPA_POLIPOS",
+        "BALL_TIP_KNIFE", "FLEXI_KNIFE", "HOOK_KNIFE", "FLEXI_KNIFE_CON_IRRIGACION", "RETIRO_DE_BALON_INTRAGASTRICO", "KIT_DE_PEG",
+        "TUBO_DE_REEMPLAZO_PARA_PEG", "IRRIGADORES_DE_CANAL", "CEPILLOS_DE_LIMPIEZA_REUSABLES", "BOTELLA_DE_AGUA_PARA_SISTEMAS_DE_ENDONCOSPIO",
+        "VALVULAS", "BOMBA DE AGUA", "BOMBA_DE_INSUFACION_DE_CO2"]
     },
+    
     {
       categoria: "Ropa Deportiva",
       tipos: ["Leggings", "Tops deportivos", "Shorts", "Chaquetas impermeables"]
@@ -104,48 +109,51 @@ function toggle(id) {
 
 
 
-// mennu toggle
-function toggle_mennu(id) {
 
-  let card = document.querySelectorAll('.tarjeta');
-  card.forEach(function(tarjeta) {
-    
+
+function filter_category(id){
+
+
+  let boton = document.querySelectorAll('.filter_none');
+  boton.forEach(function(filter_none) {
+    if (filter_none.id === id) {
+
+      let mennu = document.querySelectorAll('.tarjeta');
+      mennu.forEach(function(tarjeta) {
+
       tarjeta.style.display = 'none';
+      
+      });
+
+      // Define el valor de la categoría a buscar
+      const categoriaBuscar = id;
+
+      // Recorre las categorías
+      categorias.forEach(categoriaObj => {
+        if (categoriaObj.categoria === categoriaBuscar) {
+          // Recorre los tipos de la categoría encontrada
+          categoriaObj.tipos.forEach(tipo => {
+              
+              mennu.forEach(function(tarjeta) {
+              
+              if (tarjeta.id === tipo) {
+                
+                tarjeta.style.display = 'block';
+
+              }
+            
+            });
+            
+          });
+        }
+
+        
+        
+      });
+
+
+    } 
+
     
-  });
-
-  let contenido = document.querySelectorAll('.mn_principal');
-  contenido.forEach(function(mn_principal) {
-    if (mn_principal.id === id) {
-      mn_principal.style.display = 'block';
-    } else {
-      mn_principal.style.display = 'none';
-    }
-  });
-
-
-
-
-
-
-
-
-
-
-
-  let mennu = document.querySelectorAll('.tarjeta');
-  mennu.forEach(function(tarjeta) {
-    if (tarjeta.id === "INFANTOMETRO") {
-      tarjeta.style.display = 'block';
-    }
-    else if(tarjeta.id === "TALLIMETRO") {
-      tarjeta.style.display = 'block';
-    }
-    else if(tarjeta.id === "TELESCOPICO") {
-      tarjeta.style.display = 'block';
-    }
-     else {
-      tarjeta.style.display = 'none';
-    }
   });
 }
